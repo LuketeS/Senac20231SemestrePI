@@ -1,6 +1,6 @@
 {
-    "name": "ecommerce_test",
-    "short_name": "ecommerce_test",
+    "name": "echo_project",
+    "short_name": "echo_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

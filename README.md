@@ -1,4 +1,4 @@
-# ecommerce_test
+# echo_project
 
 A new Flutter project.
 

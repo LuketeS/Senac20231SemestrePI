@@ -1,8 +1,4 @@
-import 'package:ecommerce_test/CategoryWise.dart';
-import 'package:ecommerce_test/all_categories.dart';
-import 'package:ecommerce_test/home.dart';
-import 'package:ecommerce_test/login_screen.dart';
-import 'package:ecommerce_test/service.dart';
+import 'package:echo_project/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
