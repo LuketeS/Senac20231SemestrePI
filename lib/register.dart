@@ -1,4 +1,5 @@
 import 'package:echo_project/home.dart';
+import 'package:echo_project/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:echo_project/service.dart';
 
@@ -95,7 +96,7 @@ class Register extends StatelessWidget {
                 Future.delayed(Duration(seconds: 1), () {
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) {
-                    return HomePage();
+                    return LoginScreen();
                   }));
                 });
               } else {
