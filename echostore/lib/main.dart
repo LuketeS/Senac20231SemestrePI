@@ -1,45 +1,16 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-
-Future main() async {
-  final produto = await fetch();
-  print(produto);
-}
-
-Future<Produto> fetch() async {
-  var url = 'https://fakestoreapi.com/products?limit=5';
-  var response = await http.get(Uri.parse(url));
-  //print(response.body);,
-  var json = jsonDecode(response.body);
-  var produto =
-      Produto(title: json['title'], id: json['id'], price: json['price']);
-  return produto;
-}
-
-class Produto {
-  String title;
-  int id;
-  num price;
-
-  Produto({required this.title, required this.id, required this.price});
-}
-
-
-
-
-
-
-
-/* código padrão que vem como flutter
+import 'src/home_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -48,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomePage(),
     );
   }
 }
@@ -100,4 +71,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-*/
