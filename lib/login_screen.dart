@@ -55,7 +55,7 @@ class LoginScreen extends StatelessWidget {
                     Future.delayed(Duration(seconds: 2), () {
                       Navigator.pushReplacement(context,
                           MaterialPageRoute(builder: (context) {
-                        return HomePage();
+                        return Home();
                       }));
                     });
                   } else {
